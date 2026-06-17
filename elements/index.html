@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en" data-i18n-scope="elements">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0c0e12" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=0.1.53" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=0.1.53" />
+    <link rel="shortcut icon" href="/favicon.ico?v=0.1.53" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=0.1.53" />
+    <link rel="manifest" href="/site.webmanifest?v=0.1.53" />
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta name="description" content="NiceChunk element resource foundation: a public 118-element model for future resources, forging, visual genes, and verifiable game rules." />
+    <title data-i18n="elements.page.title">NiceChunk Elements</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="elements-bg" aria-hidden="true">
+      <div class="elements-grid-glow"></div>
+      <div class="elements-vignette"></div>
+    </div>
+
+    <header class="site-header">
+      <a class="brand-mark" href="/" aria-label="NiceChunk">
+        <img src="/media/nck.png" alt="" />
+        <span>NICECHUNK</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation" data-i18n-aria-label="elements.nav.aria">
+        <div class="nav-links">
+          <a href="/" data-i18n="elements.nav.home">Home</a>
+          <a href="/roadmap/" data-i18n="elements.nav.roadbook">Roadbook</a>
+          <a href="/world_rule/" data-i18n="elements.nav.worldRules">World Rules</a>
+          <a href="/resource_rule/" data-i18n="elements.nav.resources">Resources</a>
+          <a class="active" href="/elements/" data-i18n="elements.nav.elements">Elements</a>
+          <a href="/fairness/" data-i18n="elements.nav.fairness">Fairness</a>
+          <a href="/proof-of-frontier/" data-i18n="elements.nav.proofOfFrontier">Proof</a>
+          <a href="/guardian/" data-i18n="elements.nav.guardians">Guardians</a>
+          <a href="/docs/" data-i18n="elements.nav.docs">Docs</a>
+        </div>
+        <div class="nav-actions">
+          <a class="header-action" href="/play/" data-i18n="elements.nav.enterWorld">Enter World</a>
+          <div data-i18n-language-menu></div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="elements-layout">
+      <section class="periodic-hero" id="tableView" aria-labelledby="elementsTitle">
+        <div class="hero-copy">
+          <div>
+            <p class="eyebrow" data-i18n="elements.page.eyebrow">ELEMENT RESOURCE FOUNDATION</p>
+            <h1 id="elementsTitle" data-i18n="elements.page.heading">Elements become resources.</h1>
+          </div>
+          <div class="hero-side-copy">
+            <p data-i18n="elements.page.body">
+              NiceChunk uses the 118 real chemical elements as the open vocabulary for future resources, forging, material visuals, and verifiable game rules.
+            </p>
+            <div class="hero-actions">
+              <a class="primary-action" href="/play/" data-i18n="elements.nav.enterWorld">Enter World</a>
+              <a class="secondary-action" href="/docs/" data-i18n="elements.nav.docs">Docs</a>
+            </div>
+          </div>
+        </div>
+        <div class="element-stats" id="elementStats" aria-label="Element model status" data-i18n-aria-label="elements.page.statsAria"></div>
+        <div class="protocol-layout">
+          <div class="table-panel">
+            <div class="table-toolbar">
+              <div>
+                <p class="eyebrow" data-i18n="elements.page.tableEyebrow">Periodic Interface</p>
+                <h2 data-i18n="elements.page.tableTitle">Open element map</h2>
+              </div>
+              <div class="category-filter" id="categoryFilter" aria-label="Element category filters" data-i18n-aria-label="elements.page.filterAria"></div>
+            </div>
+            <div class="table-shell">
+              <div class="periodic-table" id="periodicTable" aria-label="Periodic table" data-i18n-aria-label="elements.page.tableAria"></div>
+            </div>
+            <div class="legend" id="categoryLegend" aria-label="Element categories" data-i18n-aria-label="elements.page.legendAria"></div>
+          </div>
+          <aside class="protocol-rail" id="elementProtocolCards" aria-label="Element protocol notes" data-i18n-aria-label="elements.page.protocolAria"></aside>
+        </div>
+      </section>
+
+      <section class="detail-view" id="detailView" hidden>
+        <a class="back-link" href="/elements/" data-i18n="elements.detail.back">Back to Element Table</a>
+        <div id="elementDetailPage"></div>
+      </section>
+    </main>
+
+    <script type="module" src="./elements.js"></script>
+  </body>
+</html>
