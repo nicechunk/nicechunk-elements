@@ -22,6 +22,14 @@ That gives the repository a useful review surface. A change to an element can be
 
 The category processing map is not final crafting design. It is a bridge between raw element taxonomy and system-level behavior such as forge tier, heat band, containment, and station type.
 
+## Processing Affinity Matrix
+
+![Processing affinity matrix](docs/diagrams/processing-affinity-matrix.svg)
+
+The next useful layer is a review matrix that connects element category to processing and affinity behavior. An element is not just a row in a table; it can imply a station class, heat band, binder requirement, handling risk, material affinity, and visual material profile. Those fields should be reviewed together because downstream systems will eventually consume them together.
+
+This keeps the element repository from becoming decorative data. If a contributor changes a category from post-transition metal to transition metal, the review should make the resulting forge tier, heat expectation, alloy potential, and visual material assumptions obvious before that change reaches resources or recipes.
+
 ## System Principles
 
 - Definitions should be canonical: element data belongs in a structured source module that other systems can import.
