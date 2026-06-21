@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Element schema pipeline</title>
+  <desc id="desc">A diagram showing how element facts are normalized into catalog rows, physical profiles, processing tiers, visual genes, and gameplay affordances.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#080d13"/>
+      <stop offset="1" stop-color="#15110e"/>
+    </linearGradient>
+    <style>
+      .label{font:800 12px Inter,ui-sans-serif,system-ui,sans-serif;letter-spacing:.16em;fill:#90ff1a}
+      .title{font:850 42px Inter,ui-sans-serif,system-ui,sans-serif;fill:#f3f8ff}
+      .copy{font:500 17px Inter,ui-sans-serif,system-ui,sans-serif;fill:#b8c7d4}
+      .card{fill:rgba(255,255,255,.06);stroke:rgba(255,255,255,.16);stroke-width:1.2;rx:16}
+      .head{font:800 19px Inter,ui-sans-serif,system-ui,sans-serif;fill:#f3f8ff}
+      .small{font:600 13px Inter,ui-sans-serif,system-ui,sans-serif;fill:#bdd0df}
+      .mono{font:750 13px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#f7d98f}
+    </style>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1060" cy="600" r="280" fill="#83ff00" opacity=".08"/>
+  <circle cx="210" cy="130" r="250" fill="#00c2ff" opacity=".08"/>
+  <text x="70" y="78" class="label">ELEMENT RESOURCE MODEL</text>
+  <text x="70" y="132" class="title">Element data becomes material behavior.</text>
+  <text x="70" y="168" class="copy">The schema keeps scientific identity, processing constraints, risk, and visual behavior in one reviewable resource record.</text>
+
+  <g transform="translate(76 236)">
+    <rect class="card" width="286" height="358"/>
+    <text x="26" y="44" class="head">Source record</text>
+    <text x="26" y="82" class="mono">atomicNumber</text>
+    <text x="26" y="110" class="mono">symbol</text>
+    <text x="26" y="138" class="mono">identity.category</text>
+    <text x="26" y="166" class="mono">atomic.atomicMass</text>
+    <text x="26" y="194" class="mono">physical.densityKgM3</text>
+    <text x="26" y="222" class="mono">chemical.reactivity</text>
+    <text x="26" y="250" class="mono">processing.risks</text>
+    <text x="26" y="278" class="mono">affinity.*</text>
+    <text x="26" y="306" class="mono">visualGene.*</text>
+  </g>
+
+  <g transform="translate(430 236)">
+    <rect class="card" width="392" height="160"/>
+    <text x="26" y="44" class="head">Catalog projection</text>
+    <text x="26" y="80" class="small">Rows are derived from canonical element records.</text>
+    <text x="26" y="118" class="mono">tableColumn, tableRow, category, phase</text>
+  </g>
+  <g transform="translate(430 434)">
+    <rect class="card" width="392" height="160"/>
+    <text x="26" y="44" class="head">Processing map</text>
+    <text x="26" y="80" class="small">Category maps to processing requirements.</text>
+    <text x="26" y="118" class="mono">alloyForge, cryogenicTrap</text>
+  </g>
+
+  <g transform="translate(890 236)">
+    <rect class="card" width="314" height="358"/>
+    <text x="26" y="44" class="head">Downstream systems</text>
+    <text x="26" y="84" class="small">resource balancing</text>
+    <text x="26" y="118" class="small">forging affordances</text>
+    <text x="26" y="152" class="small">visual material generation</text>
+    <text x="26" y="186" class="small">hazard and value modeling</text>
+    <text x="26" y="220" class="small">future alloy and chemistry rules</text>
+    <g transform="translate(38 258)">
+      <rect width="42" height="42" rx="8" fill="#f8fcff"/>
+      <rect x="54" width="42" height="42" rx="8" fill="#b96d45"/>
+      <rect x="108" width="42" height="42" rx="8" fill="#9ca4a2"/>
+      <rect x="162" width="42" height="42" rx="8" fill="#72c442"/>
+    </g>
+  </g>
+
+  <path d="M362 332 H430" stroke="#8fdcff" stroke-width="3"/>
+  <path d="M362 504 H430" stroke="#8fdcff" stroke-width="3"/>
+  <path d="M822 332 H890" stroke="#8fdcff" stroke-width="3"/>
+  <path d="M822 504 H890" stroke="#8fdcff" stroke-width="3"/>
+</svg>

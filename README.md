@@ -12,6 +12,16 @@ Elements are a design layer that can influence materials, resource interpretatio
 
 Separating this repository makes it easier to evolve element taxonomy without mixing it into gameplay rendering or chain program code.
 
+## Schema Pipeline
+
+![Element schema pipeline](docs/diagrams/element-schema-pipeline.svg)
+
+The element model is deliberately richer than a periodic table widget. Each record carries identity, atomic values, physical measurements, chemical behavior, gameplay weights, processing constraints, affinity scores, and visual genes. The page-facing catalog is derived from that record rather than maintained as separate display data.
+
+That gives the repository a useful review surface. A change to an element can be evaluated as data: does it alter mining difficulty, processing risk, visual material behavior, future alloy potential, or only presentation? The answer should be visible in the record structure.
+
+The category processing map is not final crafting design. It is a bridge between raw element taxonomy and system-level behavior such as forge tier, heat band, containment, and station type.
+
 ## System Principles
 
 - Definitions should be canonical: element data belongs in a structured source module that other systems can import.
