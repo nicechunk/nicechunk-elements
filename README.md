@@ -4,6 +4,12 @@
 
 Element definitions, catalog logic, and element reference page.
 
+## Official Links
+
+GitHub: [https://github.com/nicechunk/nicechunk-elements](https://github.com/nicechunk/nicechunk-elements)
+
+Website: [https://nicechunk.com/elements/](https://nicechunk.com/elements/)
+
 ## Project Overview
 
 This repository contains the element system used by NiceChunk. It includes raw element definitions, catalog transformation logic, and the browser page that presents elements as a structured reference.
